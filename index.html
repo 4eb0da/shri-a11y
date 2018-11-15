@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Доступность интерфейсов</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="index_files/screen-16x9.css">
+    <style>
+/* собственные стили можно писать здесь!! */
+
+.slide strong.def {
+    font-size: 135%;
+    line-height: 1.25;
+}
+
+.image-centered h2 {
+    height: 100%;
+    text-align: center;
+}
+
+.image-centered img {
+    height: 100%;
+}
+
+.slide.icons div p img,
+.slide.images div p img {
+    background: transparent;
+}
+
+.video-cover h2 {
+    display: none;
+}
+
+.video-cover > div {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+</style>
+</head>
+<body class="shower list">
+    <header class="caption">
+        <h1>Доступность интерфейсов</h1>
+        <p>Александр Нефедов, <a href="http://yandex.ru/">Яндекс</a></p>
+
+    </header>
+
+    
+
+<!-- slide #1 -->        
+<section class="slide cover" id="1"><div><h2><img src="index_files/logo-ru.svg" alt="" class="logo"></h2>
+
+</div></section>
+
+<!-- slide #2 -->
+<section class="slide title" id="доступность-интерфейсов"><div><h2>Доступность интерфейсов</h2>
+
+<h3 id="-1"><img src="index_files/title-logo-ru.svg" alt=""></h3>
+
+<div class="authors">
+
+<p>Александр Нефедов</p>
+
+
+
+
+</div>
+
+</div></section>
+
+<!-- slide #3 -->
+<section class="slide" id="про-что-лекция"><div><h2>Про что лекция?</h2>
+
+<ul>
+  <li class="next">Доступность интерфейсов</li>
+  <li class="next">Как перестать срезать доступность вместе с углами</li>
+  <li class="next">Как всем сделать хорошо</li>
+</ul>
+
+</div></section>
+
+<!-- slide #4 -->
+<section class="slide" id="доступность"><div><h2>Доступность</h2>
+
+<p><strong class="def">Доступность — возможность использования интерфейса всеми, независимо от физических или технических ограничений</strong></p>
+
+<h3 id="httpsgithubcomweb-standards-rudictionary">https://github.com/web-standards-ru/dictionary</h3>
+
+</div></section>
+
+<!-- slide #5 -->
+<section class="slide" id="мотивация"><div><h2>Мотивация</h2>
+
+<ul>
+  <li class="next">Моральная</li>
+  <li class="next">Финансовая</li>
+  <li class="next">Юридическая</li>
+</ul>
+
+</div></section>
+
+<!-- slide #6 -->
+<section class="slide" id="требования-и-рекомендации"><div><h2>Требования и рекомендации</h2>
+
+<ul>
+  <li>ГОСТ Р 52872-2012</li>
+  <li>WCAG 2.0</li>
+  <li>Законодательные акты различных стран</li>
+</ul>
+
+</div></section>
+
+<!-- slide #7 -->
+<section class="slide" id="нарушения-зрения"><div><h2>Нарушения зрения</h2>
+
+<p>Около 1 млн человек с нарушениями зрения</p>
+
+<p>Полностью слепых - около 100 тыс.</p>
+
+</div></section>
+
+<!-- slide #8 -->
+<section class="slide" id="нарушения-моторики-опорно-двигательного-аппарата"><div><h2>Нарушения моторики, опорно-двигательного аппарата</h2>
+
+<p>До 10% населения имеют проблемы с опорно-двигательным аппаратом</p>
+
+</div></section>
+
+<!-- slide #9 -->
+<section class="slide" id="другие-виды-нарушений"><div><h2>Другие виды нарушений</h2>
+
+<ul>
+  <li>Слуха</li>
+  <li>Эпилепсия, нарушения развития, разные виды когнитивных расстройств</li>
+  <li>Временные ограничения</li>
+</ul>
+
+</div></section>
+
+<!-- slide #10 -->
+<section class="slide" id="вспомогательные-технологии"><div><h2>Вспомогательные технологии</h2>
+
+<ul>
+  <li class="next">Программы экранного чтения</li>
+  <li class="next">Экранная лупа, настройки текста и контрастности</li>
+  <li class="next">Дисплеи Брайля</li>
+  <li class="next">Распознование речи</li>
+  <li class="next">Устойства для привязки определённых клавиш</li>
+</ul>
+
+</div></section>
+
+<!-- slide #11 -->
+<section class="slide section" id="советы-и-практики-по-разметке-страницы"><div><h2>Советы и практики по разметке страницы</h2>
+
+</div></section>
+
+<!-- slide #12 -->
+<section class="slide" id="основные-советы"><div><h2>Основные советы</h2>
+
+<ul>
+  <li class="next">Используйте семантичную вёрстку</li>
+</ul>
+
+</div></section>
+
+<!-- slide #13 -->
+<section class="slide" id="заголовки"><div><h2>Заголовки</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Самая важная страница сайта<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Вступление<span class="nt">&lt;/h2&gt;</span>
+...
+<span class="nt">&lt;h3&gt;</span>Пример<span class="nt">&lt;/h3&gt;</span>
+...
+<span class="nt">&lt;h2&gt;</span>Основная мысль<span class="nt">&lt;/h2&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #14 -->
+<section class="slide" id="заголовки-1"><div><h2>Заголовки</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Самая важная страница сайта<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Вступление<span class="nt">&lt;/h2&gt;</span>
+    ...
+        <span class="nt">&lt;h3&gt;</span>Пример<span class="nt">&lt;/h3&gt;</span>
+        ...
+    <span class="nt">&lt;h2&gt;</span>Основная мысль<span class="nt">&lt;/h2&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #15 -->
+<section class="slide" id="html5"><div><h2>HTML5</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;header&gt;&lt;/header&gt;</span>
+<span class="nt">&lt;nav&gt;&lt;/nav&gt;</span>
+<span class="nt">&lt;main&gt;&lt;/main&gt;</span>
+<span class="nt">&lt;section&gt;&lt;/section&gt;</span>
+<span class="nt">&lt;article&gt;&lt;/article&gt;</span>
+<span class="nt">&lt;aside&gt;&lt;/aside&gt;</span>
+<span class="nt">&lt;footer&gt;&lt;/footer&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #16 -->
+<section class="slide cover" id="-2"><div><h2><img src="index_files/readers-view.png" alt=""></h2>
+
+</div></section>
+
+<!-- slide #17 -->
+<section class="slide" id="основные-советы-1"><div><h2>Основные советы</h2>
+
+<ul>
+  <li>Указывайте title</li>
+  <li class="next">Указывайте язык страницы</li>
+</ul>
+
+</div></section>
+
+<!-- slide #18 -->
+<section class="slide" id="атрибут-lang"><div><h2>Атрибут lang</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ru"</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/html&gt;</span>
+
+<span class="nt">&lt;blockquote</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/blockquote&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #19 -->
+<section class="slide" id="основные-советы-2"><div><h2>Основные советы</h2>
+
+<ul>
+  <li>Сохраняйте логическую структуру на разных страницах сайта</li>
+  <li class="next">Если существует встроенный аналог - используйте его</li>
+</ul>
+
+</div></section>
+
+<!-- slide #20 -->
+<section class="slide" id="встроенные-элементы"><div><h2>Встроенные элементы</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div&gt;</span>Кнопка<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;span&gt;</span>Ссылка<span class="nt">&lt;/span&gt;</span>
+
+<span class="nt">&lt;button&gt;</span>Кнопка<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"somepage.html"</span><span class="nt">&gt;</span>Ссылка<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #21 -->
+<section class="slide" id="встроенные-элементы-1"><div><h2>Встроенные элементы</h2>
+
+<ul>
+  <li>Получают фокус</li>
+  <li class="next">Работают с клавиатурой</li>
+  <li class="next">Имеют правильные роли</li>
+  <li class="next">Другое: disabled, :link</li>
+</ul>
+
+</div></section>
+
+<!-- slide #22 -->
+<section class="slide" id="картинки"><div><h2>Картинки</h2>
+
+<ul>
+  <li class="next">Делайте картинки с помощью тега img</li>
+  <li class="next">Добавляйте описание с помощью атрибута alt</li>
+</ul>
+
+</div></section>
+
+<!-- slide #23 -->
+<section class="slide" id="формы"><div><h2>Формы</h2>
+
+<ul>
+  <li class="next">Используйте настоящие формы с тегом form, которые могут быть отправлены</li>
+  <li class="next">Связывайте поля с label</li>
+  <li class="next">Используйте поля ввода с правильным типом</li>
+  <li class="next">Добавляйте обязательным полям атрибуты required</li>
+  <li class="next">Корректно выводите сообщения об ошибках (в том числе валидации)</li>
+  <li class="next">Группируйте поля ввода</li>
+</ul>
+
+</div></section>
+
+<!-- slide #24 -->
+<section class="slide" id="формы-1"><div><h2>Формы</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"submit-form.html"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset&gt;</span>
+        <span class="nt">&lt;legend&gt;</span>Детали поездки<span class="nt">&lt;/legend&gt;</span>
+        <span class="nt">&lt;label&gt;</span>
+            Темература
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"range"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date"</span><span class="nt">&gt;</span>Дата<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"date"</span> <span class="na">type=</span><span class="s">"date"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Отправить<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #25 -->
+<section class="slide section" id="дизайн"><div><h2>Дизайн</h2>
+
+</div></section>
+
+<!-- slide #26 -->
+<section class="slide" id="цвет"><div><h2>Цвет</h2>
+
+<ul>
+  <li class="next">Цвет не должен быть единственным источником информации, дублиуйте иконками и текстом</li>
+  <li class="next">Цвета должны быть контрастными, текст - читаемым</li>
+</ul>
+
+</div></section>
+
+<!-- slide #27 -->
+<section class="slide cover image-centered" id="-3"><div><h2><img src="index_files/colorpicker.png" alt=""></h2>
+
+</div></section>
+
+<!-- slide #28 -->
+<section class="slide cover image-centered" id="-4"><div><h2><img src="index_files/contrast.png" alt=""></h2>
+
+</div></section>
+
+<!-- slide #29 -->
+<section class="slide" id="другие-аспекты-дизайна"><div><h2>Другие аспекты дизайна</h2>
+
+<ul>
+  <li>Удобная область клика</li>
+</ul>
+
+</div></section>
+
+<!-- slide #30 -->
+<section class="slide cover image-centered" id="-5"><div><h2><img src="index_files/close.png" alt=""></h2>
+
+</div></section>
+
+<!-- slide #31 -->
+<section class="slide" id="другие-аспекты-дизайна-1"><div><h2>Другие аспекты дизайна</h2>
+
+<ul>
+  <li>Не стоит делать мигающие элементы</li>
+  <li>Поддержка увеличенных шрифтов</li>
+</ul>
+
+</div></section>
+
+<!-- slide #32 -->
+<section class="slide" id="другие-аспекты-дизайна-2"><div><h2>Другие аспекты дизайна</h2>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Плохо */</span>
+<span class="nc">.text</span> <span class="p">{</span>
+    <span class="nl">line-height</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Хорошо */</span>
+<span class="nc">.text</span> <span class="p">{</span>
+    <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.2</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #33 -->
+<section class="slide" id="советы-по-использованию-сайта"><div><h2>Советы по использованию сайта</h2>
+
+<ul>
+  <li class="next">Важные действия стоит явно обозначать (и даже предупреждать диалогом)</li>
+  <li class="next">Не должно быть временных ограничений</li>
+  <li class="next">Не должно быть сложного поведения для совершения каких-то действий (доступная капча, жесты)</li>
+</ul>
+
+</div></section>
+
+<!-- slide #34 -->
+<section class="slide section" id="управление-с-клавиатуры-и-фокус"><div><h2>Управление с клавиатуры и фокус</h2>
+
+</div></section>
+
+<!-- slide #35 -->
+<section class="slide images two" id="порядок-элементов"><div><h2>Порядок элементов</h2>
+
+<p style="float: right;" class="next"><img src="index_files/tab.png" alt=""></p>
+<p style="float: right;" class="next"><img src="index_files/shifttab.png" alt=""></p>
+
+</div></section>
+
+<!-- slide #36 -->
+<section class="slide" id="порядок-элементов-1"><div><h2>Порядок элементов</h2>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.absolute</span> <span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.float</span> <span class="p">{</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.order</span> <span class="p">{</span>
+    <span class="nl">order</span><span class="p">:</span> <span class="m">2</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #37 -->
+<section class="slide" id="tabindex"><div><h2>tabindex</h2>
+
+<ul>
+  <li class="next">tabindex = 0</li>
+  <li class="next">tabindex = -1</li>
+  <li class="next">tabindex &gt; 0</li>
+</ul>
+
+</div></section>
+
+<!-- slide #38 -->
+<section class="slide" id="tabindex--0"><div><h2>tabindex = 0</h2>
+
+<p><strong>Добавляет возможность фокусировки произвольному элементу</strong></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button&gt;</span><span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;button&gt;</span><span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #39 -->
+<section class="slide cover image-centered" id="-6"><div><h2><img src="index_files/tabindex0.gif" alt=""></h2>
+
+</div></section>
+
+<!-- slide #40 -->
+<section class="slide" id="tabindex---1"><div><h2>tabindex = -1</h2>
+
+<p><strong>Убирает элемент из обхода фокуса</strong></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button&gt;</span><span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button&gt;</span><span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #41 -->
+<section class="slide cover image-centered" id="-7"><div><h2><img src="index_files/tabindex-1.gif" alt=""></h2>
+
+</div></section>
+
+<!-- slide #42 -->
+<section class="slide" id="tabindex--0-1"><div><h2>tabindex &gt; 0</h2>
+
+<p><strong>Меняет порядок фокуса</strong></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button&gt;</span><span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"2"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button&gt;</span><span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #43 -->
+<section class="slide cover image-centered" id="-8"><div><h2><img src="index_files/tabindex2.gif" alt=""></h2>
+
+</div></section>
+
+<!-- slide #44 -->
+<section class="slide section" id="focus-ring"><div><h2>Focus ring</h2>
+
+</div></section>
+
+<!-- slide #45 -->
+<section class="slide cover" id="-9"><div><h2><img src="index_files/focusring.gif" alt=""></h2>
+
+</div></section>
+
+<!-- slide #46 -->
+<section class="slide" id="focus-ring---плохо"><div><h2>Focus ring - плохо</h2>
+
+<pre class="highlight"><code>
+<span class="nt">input</span> <span class="p">{</span>
+    <mark><span class="nl">outline</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span></mark>
+<span class="p">}</span>
+</code></pre>
+
+</div></section>
+
+<!-- slide #47 -->
+<section class="slide" id="focus-ring---хорошо"><div><h2>Focus ring - хорошо</h2>
+
+<pre class="highlight"><code>
+<span class="nt">input</span><span class="nd">:focus</span> <span class="p">{</span>
+    <span class="nl">outline</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="m">#fc0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">input</span><span class="nd">:focus</span> <span class="p">{</span>
+    <span class="nl">outline</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="err">box-shadow</span> <span class="err">0</span> <span class="err">0</span> <span class="err">0</span> <span class="err">2px</span> <span class="err">#fc0;</span>
+<span class="p">}</span>
+</code></pre>
+
+</div></section>
+
+<!-- slide #48 -->
+<section class="slide cover" id="-10"><div><h2><img src="index_files/outline.gif" alt=""></h2>
+
+</div></section>
+
+<!-- slide #49 -->
+<section class="slide" id="состояние-когда-нужно-показать-фокус"><div><h2>Состояние, когда нужно показать фокус</h2>
+
+<p><strong>:focus матчит элемент с фокусом в любое время, но браузер показывает фокус на элементах не всегда</strong></p>
+
+</div></section>
+
+<!-- slide #50 -->
+<section class="slide cover" id="-11"><div><h2><img src="index_files/focusvisible.gif" alt=""></h2>
+
+</div></section>
+
+<!-- slide #51 -->
+<section class="slide" id="focus-visible"><div><h2>:focus-visible</h2>
+
+<ul>
+  <li class="next">Матчит элемент, если браузер считает, что нужно показать фокус</li>
+  <li class="next">Chrome 67+ (Experimental Platform Features)</li>
+  <li class="next">Есть полифил</li>
+</ul>
+
+</div></section>
+
+<!-- slide #52 -->
+<section class="slide" id="focus-visible-1"><div><h2>:focus-visible</h2>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">button</span> <span class="p">{</span>
+    <span class="nl">outline</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">button</span><span class="nd">:focus-visible</span> <span class="p">{</span>
+    <span class="nl">outline</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="m">#fc0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #53 -->
+<section class="slide" id="focus-within"><div><h2>:focus-within</h2>
+
+<ul>
+  <li class="next">Матчит элемент, если внутри есть элемент с фокусом</li>
+  <li class="next">Chrome 60+, Firefox 52+, Safari 10.1+</li>
+</ul>
+
+</div></section>
+
+<!-- slide #54 -->
+<section class="slide" id="focus-within-1"><div><h2>:focus-within</h2>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span><span class="nd">:focus-within</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="m">#4eb0da</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #55 -->
+<section class="slide" id="управление-фокусом"><div><h2>Управление фокусом</h2>
+
+<ul>
+  <li class="next">Enter/space, стрелки, ESC</li>
+  <li class="next">Focus lock</li>
+</ul>
+
+</div></section>
+
+<!-- slide #56 -->
+<section class="slide" id="react-focus-lock"><div><h2>React Focus Lock</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;FocusLock&gt;</span>
+    Фокус не выйдет за пределы элемента
+    <span class="nt">&lt;button</span> <span class="na">onClick=</span><span class="s">{onClick}</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/FocusLock&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #57 -->
+<section class="slide" id="анимации"><div><h2>Анимации</h2>
+
+<pre><code>
+<span class="nc">.hidden</span> {
+    opacity: 0;
+    transform: translate(100px);
+    <mark>visibility: hidden;</mark>
+}
+</code></pre>
+
+</div></section>
+
+<!-- slide #58 -->
+<section class="slide" id="canvas"><div><h2>Canvas</h2>
+
+<ul>
+  <li class="next">Hit regions</li>
+  <li class="next">drawFocusIfNeeded, scrollPathIntoView</li>
+</ul>
+
+</div></section>
+
+<!-- slide #59 -->
+<section class="slide section" id="wai-aria"><div><h2>WAI-ARIA</h2>
+
+</div></section>
+
+<!-- slide #60 -->
+<section class="slide" id="доступность-1"><div><h2>Доступность</h2>
+
+<p>Web Accessibility Initiative — Accessible Rich Internet Applications</p>
+
+<p><strong class="def">Определяет способ сделать веб-страницы и приложения более доступными для людей с ограниченными возможностями</strong></p>
+
+</div></section>
+
+<!-- slide #61 -->
+<section class="slide" id="accessibility-tree"><div><h2>Accessibility tree</h2>
+
+<div style="display: flex; text-align: center;">
+    <p style="flex: 1 0 0;">
+        <img src="index_files/dom-tree.png" alt="" width="100%">
+        DOM tree
+    </p>
+    <p style="flex: 1 0 0;">
+        <img src="index_files/a11y-tree.png" alt="" width="100%">
+        Accessibility tree
+    </p>
+    <p style="flex: 1 0 0;">
+        <img src="index_files/tech.png" alt="" width="100%">
+        Ассистивные технологии
+    </p>
+    <p style="flex: 1 0 0;">
+        <img src="index_files/man.png" alt="" width="100%">
+        Пользователь
+    </p>
+</div>
+
+</div></section>
+
+<!-- slide #62 -->
+<section class="slide images" id="инструменты---firefox"><div><h2>Инструменты - Firefox</h2>
+
+<p><img src="index_files/ff-tree.png" alt="" style="width: 100%;"></p>
+
+</div></section>
+
+<!-- slide #63 -->
+<section class="slide images" id="инструменты---chrome"><div><h2>Инструменты - Chrome</h2>
+
+<p><img src="index_files/chrome-tree.png" alt=""></p>
+
+</div></section>
+
+<!-- slide #64 -->
+<section class="slide" id="кастомный-чекбокс-через-div"><div><h2>Кастомный чекбокс через div</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+    Галочка
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p>Роль: обычный контейнер</p>
+
+<p>Текст: Галочка</p>
+
+</div></section>
+
+<!-- slide #65 -->
+<section class="slide" id="нативный-чекбокс"><div><h2>Нативный чекбокс</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+    Галочка
+<span class="nt">&lt;/label&gt;</span>
+</code></pre></div></div>
+
+<p>Роль: чекбокс</p>
+
+<p>Текст: Галочка</p>
+
+<p>Отмечено: нет</p>
+
+</div></section>
+
+<!-- slide #66 -->
+<section class="slide" id="атрибуты-aria"><div><h2>Атрибуты ARIA</h2>
+
+<ul>
+  <li class="next">Роли элементов</li>
+  <li class="next">Свойства для описания элементов</li>
+</ul>
+
+</div></section>
+
+<!-- slide #67 -->
+<section class="slide" id="роли-элементов"><div><h2>Роли элементов</h2>
+
+<ul>
+  <li class="next">Роли отдельных виджетов: button, input, checkbox</li>
+  <li class="next">Композитные роли: tablist, tree, menu</li>
+  <li class="next">Структурные роли: img, list, tooltip</li>
+  <li class="next">Роли регионов: main, navigation, contentinfo</li>
+</ul>
+
+</div></section>
+
+<!-- slide #68 -->
+<section class="slide" id="состояния-виджетов"><div><h2>Состояния виджетов</h2>
+
+<ul>
+  <li>aria-label</li>
+  <li>aria-checked</li>
+  <li>aria-disabled</li>
+  <li>aria-valuemax</li>
+</ul>
+
+</div></section>
+
+<!-- slide #69 -->
+<section class="slide" id="связь-с-другими-элементами"><div><h2>Связь с другими элементами</h2>
+
+<ul>
+  <li>aria-labelledby</li>
+  <li>aria-controls</li>
+  <li>aria-activedescendant</li>
+</ul>
+
+</div></section>
+
+<!-- slide #70 -->
+<section class="slide" id="живые-регионы-live-regions"><div><h2>“Живые” регионы (live-regions)</h2>
+
+<ul>
+  <li>aria-live</li>
+  <li>aria-busy</li>
+</ul>
+
+</div></section>
+
+<!-- slide #71 -->
+<section class="slide" id="всему-нужно-своё-имя"><div><h2>Всему нужно своё имя</h2>
+
+<p><strong class="def">Любой несущий смысл контент должен быть 
+озаглавлен. Используйте title, arial-label или 
+aria-labelledby/aria-describedby для этого</strong></p>
+
+</div></section>
+
+<!-- slide #72 -->
+<section class="slide" id="примеры-кастомных-элементов"><div><h2>Примеры кастомных элементов</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    Кнопка
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #73 -->
+<section class="slide" id="примеры-кастомных-элементов-1"><div><h2>Примеры кастомных элементов</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tablist"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">aria-selected=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"panel0"</span><span class="nt">&gt;</span>Первая<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">aria-selected=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"panel1"</span><span class="nt">&gt;</span>Вторая<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #74 -->
+<section class="slide" id="пример-связи-элементов"><div><h2>Пример связи элементов</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">aria-expanded=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"spoilers"</span><span class="nt">&gt;</span>
+    Показать спойлеры
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"spoilers"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #75 -->
+<section class="slide" id="пример-связи-элементов-1"><div><h2>Пример связи элементов</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">aria-label=</span><span class="s">"Отменить"</span> <span class="na">aria-describedby=</span><span class="s">"describe-close"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"describe-close"</span><span class="nt">&gt;</span>Отмена отмены может отменить отмену<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #76 -->
+<section class="slide" id="live-regions"><div><h2>Live regions</h2>
+
+<p>Сразу сообщит пользователю об изменениях</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">aria-live=</span><span class="s">"assertive"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p>Подождёт окончания текущего текста</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">aria-live=</span><span class="s">"polite"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #77 -->
+<section class="slide" id="live-regions-1"><div><h2>Live regions</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Произошло невозможное<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #78 -->
+<section class="slide" id="скрыть-от-всего"><div><h2>Скрыть от всего</h2>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">visibility</span><span class="o">:</span> <span class="nt">hidden</span><span class="o">;</span>
+    <span class="nt">display</span><span class="o">:</span> <span class="nt">none</span><span class="o">;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #79 -->
+<section class="slide" id="скрыть-то-что-якобы-и-так-не-видно"><div><h2>Скрыть то, что якобы и так не видно</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;iframe</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #80 -->
+<section class="slide" id="скрыть-декоративный-контент"><div><h2>Скрыть декоративный контент</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #81 -->
+<section class="slide" id="скрыть-от-всего-кроме-программ-экранного-чтения"><div><h2>Скрыть от всего, кроме программ экранного чтения</h2>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.visually-hidden</span> <span class="p">{</span>
+     <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+     <span class="nl">height</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span> <span class="nl">width</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span>
+     <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+     <span class="nl">clip</span><span class="p">:</span> <span class="n">rect</span><span class="p">(</span><span class="m">1px</span> <span class="m">1px</span> <span class="m">1px</span> <span class="m">1px</span><span class="p">);</span> <span class="c">/* IE6, IE7 */</span>
+     <span class="nl">clip</span><span class="p">:</span> <span class="n">rect</span><span class="p">(</span><span class="m">1px</span><span class="p">,</span> <span class="m">1px</span><span class="p">,</span> <span class="m">1px</span><span class="p">,</span> <span class="m">1px</span><span class="p">);</span>
+ <span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="httpssnookcaarchiveshtml_and_csshiding-content-for-accessibility">https://snook.ca/archives/html_and_css/hiding-content-for-accessibility</h3>
+
+</div></section>
+
+<!-- slide #82 -->
+<section class="slide" id="советы-и-рекомендации"><div><h2>Советы и рекомендации</h2>
+
+<ul>
+  <li class="next">Если есть нативная возможность сделать что-то, используйте её</li>
+  <li class="next">Не меняйте нативное поведение на любое другое</li>
+</ul>
+
+</div></section>
+
+<!-- slide #83 -->
+<section class="slide" id="советы-и-рекомендации-1"><div><h2>Советы и рекомендации</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Плохо --&gt;</span>
+<span class="nt">&lt;h2</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Главная<span class="nt">&lt;/h2&gt;</span>
+
+<span class="c">&lt;!-- Хорошо --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;&lt;h2&gt;</span>Главная<span class="nt">&lt;/h2&gt;&lt;/div&gt;</span>
+</code></pre></div></div>
+
+</div></section>
+
+<!-- slide #84 -->
+<section class="slide" id="советы-и-рекомендации-2"><div><h2>Советы и рекомендации</h2>
+
+<ul>
+  <li>Если есть нативная возможность сделать что-то, используйте её</li>
+  <li>Не меняйте нативное поведение на любое другое</li>
+  <li>Все интерактивные элементы страницы должны быть доступны для управления с клавиатуры</li>
+  <li class="next">Не скрывайте от программ экранного чтения фокусируемый контент на странице</li>
+  <li class="next">Все интерактивные элементы должны иметь описание</li>
+</ul>
+
+</div></section>
+
+<!-- slide #85 -->
+<section class="slide" id="примеры"><div><h2>Примеры</h2>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/wai-aria-practices/">WAI-Aria Authoring Practices</a></li>
+  <li><a href="https://a11yproject.com/patterns">The A11Y Project patterns</a></li>
+  <li><a href="http://heydonworks.com/practical_aria_examples/">Heydonworks</a></li>
+</ul>
+
+</div></section>
+
+<!-- slide #86 -->
+<section class="slide section" id="скринридеры"><div><h2>Скринридеры</h2>
+
+</div></section>
+
+<!-- slide #87 -->
+<section class="slide" id="решения"><div><h2>Решения</h2>
+
+<ul>
+  <li class="next">Jaws (Windows)</li>
+  <li class="next">NVDA (Windows)</li>
+  <li class="next">VoiceOver (Mac, iOS)</li>
+  <li class="next">Talkback (Android)</li>
+</ul>
+
+</div></section>
+
+<!-- slide #88 -->
+<section class="slide cover video-cover" id="divdiv"><div><h2>&lt;div&gt;&lt;/div&gt;</h2>
+
+<video controls="controls" width="100%" height="100%">
+    <source src="index_files/screenreader3.mp4" type="video/mp4;">
+</video>
+
+</div></section>
+
+<!-- slide #89 -->
+<section class="slide section" id="аудит-доступности"><div><h2>Аудит доступности</h2>
+
+</div></section>
+
+<!-- slide #90 -->
+<section class="slide" id="автоматические-инструменты"><div><h2>Автоматические инструменты</h2>
+
+<ul>
+  <li class="next">Lighthouse (Chrome Devtools Audit)</li>
+  <li class="next"><a href="http://validator.w3.org/unicorn/">W3C Validator</a></li>
+  <li class="next"><a href="https://wave.webaim.org/">Wave</a></li>
+  <li class="next"><a href="https://www.deque.com/axe/">Axe</a></li>
+</ul>
+
+</div></section>
+
+<!-- slide #91 -->
+<section class="slide" id="проверить-самому"><div><h2>Проверить самому</h2>
+
+<ul>
+  <li class="next">Валидная вёрстка, семантика, ориентиры</li>
+  <li class="next">Использование клавиатуры</li>
+  <li class="next">Доступность картинок, медиа, форм</li>
+</ul>
+
+</div></section>
+
+<!-- slide #92 -->
+<section class="slide" id="проверить-самому-1"><div><h2>Проверить самому</h2>
+
+<ul>
+  <li class="next">Цвет и контрастность элементов, читаемость</li>
+  <li class="next">Проектирование интерфейсов с учётом особенностей пользователей</li>
+  <li class="next">Единообразие поведения, структуры страницы</li>
+</ul>
+
+</div></section>
+
+<!-- slide #93 -->
+<section class="slide contacts" id="контакты"><div><h2>Контакты</h2>
+
+<figure>
+
+  <h3 id="section">Александр Нефедов</h3>
+
+</figure>
+
+<!-- разделитель контактов -->
+<hr>
+
+<!-- left -->
+<ul>
+  <li class="mail">4eb0da@yandex-team.ru</li>
+  <li class="github">4eb0da</li>
+</ul>
+
+<!--
+
+- {:.mail}author@yandex-team.ru
+- {:.phone}+7-999-888-7766
+- {:.github}author
+- {:.bitbucket}author
+- {:.twitter}@author
+- {:.telegram}author
+- {:.skype}author
+- {:.instagram}author
+- {:.facebook}author
+- {:.vk}@author
+- {:.ok}@author
+
+-->
+
+</div></section>
+
+    
+    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="" aria-valuenow="-1" aria-valuetext="Slideshow Progress: -1%"></div>
+    
+
+    <script src="index_files/shower.js"></script>
+    <!-- Copyright © 2018 Александр Нефедов, Яндекс — http://yandex.ru/ -->
+
+
+<section role="region" aria-live="assertive" aria-relevant="additions" aria-label="Slide Content: Auto-updating" class="region"></section></body></html>
